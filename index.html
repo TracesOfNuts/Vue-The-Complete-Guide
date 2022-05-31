@@ -19,6 +19,10 @@
     <section id="user-goal">
       <h2>My Course Goal</h2>
       <p>{{ courseGoal }}</p>
+      <!-- cannot do the following. value of href is not converted because data properties are only accessible within tags. -->
+      <!-- <p>Learn more <a href="{{ vueLink }}">about Vue.</a></p> -->
+      <!-- Instead, need to use the Vue directives 'v-bind', and do need to use {{}} -->
+      <p>Learn more <a v-bind:href="vueLink">about Vue.</a></p>      
     </section>
   </body>
 </html>
