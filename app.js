@@ -5,8 +5,8 @@ const app = Vue.createApp({ // have to pass an object as arg to createApp
     data() {
         return {
             courseGoal: 'Yay!',
-            courseGoalA: 'Finish the course!', // the return object can now be used in the Vue-controlled HTML by using a specific syntax called interpolation
-            courseGoalB: 'Master Vue and build amazing apps!',
+            courseGoalA: '<p>Finish the course!</p>', // the return object can now be used in the Vue-controlled HTML by using a specific syntax called interpolation
+            courseGoalB: '<p>Master Vue and build amazing apps!</p>',
             vueLink: 'https://vuejs.org/',
         };
     },
