@@ -7,6 +7,16 @@ const app = Vue.createApp({ // have to pass an object as arg to createApp
             courseGoal: 'Finish the course!', // the return object can now be used in the Vue-controlled HTML by using a specific syntax called interpolation
             vueLink: 'https://vuejs.org/',
         };
+    },
+    methods: {  // similarly, 'methods' is a reserved keyword
+        outputGoal(){
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return 'Learn Vue!';
+            } else {
+                return 'Master Vue!';
+            }
+        }
     }
 });
 
